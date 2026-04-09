@@ -1,6 +1,6 @@
 # Claude Workshop Starter
 
-Starter repo for the **GSU Programming Club x Claude Code Workshop**, April 27, 2026.
+Starter repo for the **progsu x Claude Code Workshop**, April 27, 2026.
 
 ## 60-second quickstart
 
@@ -48,6 +48,3 @@ Then open **[GUIDE.md](./GUIDE.md)** and follow along.
 - ~2 GB free disk space (Playwright Chromium is chunky)
 - A Claude account with credits, you got $40 at check-in
 
-## License
-
-MIT. Have fun with it.

@@ -26,13 +26,13 @@ then open **[GUIDE.md](./GUIDE.md)** and follow along.
 
 ## what's in the box
 
-- **GUIDE.md**, the full workshop walkthrough
-- **TROUBLESHOOTING.md**, when things break
-- **.mcp.json**, preconfigured MCP servers (context7, github, vercel, playwright, magic)
-- **.claude/agents/**, 5 ready-to-use subagents
-- **.claude/skills/**, the `everything-claude-code-conventions` skill
-- **setup/**, OS-specific setup scripts (node, pnpm, python, uv, claude code, gh)
-- **projects/**, two project templates to pick from
+- **GUIDE.md**: the full workshop walkthrough
+- **TROUBLESHOOTING.md**: for when things break
+- **.mcp.json**: includes preconfigured MCP servers (context7, github, vercel, playwright, magic)
+- **.claude/agents/**: 5 ready-to-use subagents
+- **.claude/skills/**: the `everything-claude-code-conventions` skill
+- **setup/**: OS-specific setup scripts (node, pnpm, python, uv, claude code, gh)
+- **projects/**: two project templates to pick from
 
 ## projects
 
@@ -45,5 +45,5 @@ then open **[GUIDE.md](./GUIDE.md)** and follow along.
 
 - macOS, linux, or windows 10/11
 - git and a github account
-- ~2 GB free disk space (playwright chromium is chunky)
-- a claude account with credits, you got $40 at check-in
+- ~2 GB free disk space (playwright chromium is chunky for project B)
+- a claude account with credits (you got $40 at check-in)

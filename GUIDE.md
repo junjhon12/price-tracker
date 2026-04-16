@@ -83,6 +83,19 @@ the script will install or verify:
 - **claude code CLI**
 - **github CLI (`gh`)**
 
+### verify your installations
+
+after the setup script finishes, confirm everything actually installed:
+
+```bash
+node -v          # should be v20.x.x or higher
+pnpm -v          # should be 10.x.x
+python --version # should be 3.11.x or higher
+claude --version
+```
+
+if any of these fail or show the wrong version, re-run the setup script or install manually — see [troubleshooting](#11-troubleshooting).
+
 > **why `pnpm` and `uv` specifically?** both are drop-in replacements for `npm` and `pip` that are dramatically faster and have better dependency resolution. the workshop uses them everywhere. If you normally use `npm` or `pip`, that's fine for your own projects, but please use `pnpm` and `uv` tonight so everyone's commands look the same.
 
 ### step 3: copy the env file

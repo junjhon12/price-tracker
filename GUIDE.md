@@ -72,7 +72,7 @@ pick the one that matches your machine:
 
 **windows (powerShell, run as admin):**
 ```powershell
-.\setup\setup-windows.ps1
+.\setup\windows.ps1
 ```
 
 the script will install or verify:

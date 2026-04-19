@@ -177,6 +177,13 @@ uv sync
 uv run uvicorn app.main:app --reload
 ```
 
+### playwright crashes with NotImplementedError (windows only)
+
+**cause:** windows' default asyncio event loop can't launch chrome as a subprocess. only hits windows users at runtime.
+
+**fix:** tell claude:
+> "Rewrite the scraper to use the sync Playwright API inside asyncio.to_thread() instead of async_playwright() directly."
+
 ### playwright scrape times out
 
 **step 1:** use the `playwright` MCP to open the same URL interactively and see what's actually rendered. you're probably hitting a CAPTCHA page, not your target page.

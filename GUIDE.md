@@ -72,7 +72,7 @@ pick the one that matches your machine:
 
 **windows (powerShell, run as admin):**
 ```powershell
-.\setup\setup-windows.ps1
+.\setup\windows.ps1
 ```
 
 the script will install or verify:
@@ -82,6 +82,19 @@ the script will install or verify:
 - **uv**, our python package manager for the workshop
 - **claude code CLI**
 - **github CLI (`gh`)**
+
+### verify your installations
+
+after the setup script finishes, confirm everything actually installed:
+
+```bash
+node -v          # should be v20.x.x or higher
+pnpm -v          # should be 10.x.x
+python --version # should be 3.11.x or higher
+claude --version
+```
+
+if any of these fail or show the wrong version, re-run the setup script or install manually — see [troubleshooting](#11-troubleshooting).
 
 > **why `pnpm` and `uv` specifically?** both are drop-in replacements for `npm` and `pip` that are dramatically faster and have better dependency resolution. the workshop uses them everywhere. If you normally use `npm` or `pip`, that's fine for your own projects, but please use `pnpm` and `uv` tonight so everyone's commands look the same.
 
@@ -336,8 +349,8 @@ Features:
 Workflow:
 - Use uv for all Python deps: `uv init`, `uv add fastapi playwright ...`
 - Use pnpm for all Node deps
-- Use context7 to look up current FastAPI and Playwright Python API
-  BEFORE writing scraper code, don't guess selectors or API shapes
+- Use context7 to look up docs for every library BEFORE writing any backend code: FastAPI, aiosqlite, Playwright,
+  and any other dependency you add. Don't rely on Claude's memory for API shapes or usage patterns, it will guess and get it wrong.
 - Use the playwright MCP to interactively test selectors on real pages during development
 - When debugging failed scrapes, delegate to the debugger subagent
 - Follow commit conventions from the everything-claude-code-conventions skill

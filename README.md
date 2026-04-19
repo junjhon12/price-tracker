@@ -1,6 +1,6 @@
 # claude workshop starter
 
-starter repo for **claude code workshop** on 04-27-2026
+starter repo for the **claude code workshop** on 04-27-2026, hosted by **[progsu](https://progsu.com)**
 
 ## 60-second quickstart
 

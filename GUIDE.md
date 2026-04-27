@@ -3,7 +3,7 @@
 welcome! by the end of this workshop, you'll have a real project built with claude code, MCPs, subagents, and skills, AND it'll be deployed live, accessible by anyone!
 
 **time:** ~2 hours of building
-**what you need:** a laptop, a terminal, a github account, and the free $40 in claude credits
+**what you need:** a laptop, a terminal, a github account, and the free $20 in claude credits
 
 ---
 
@@ -31,6 +31,9 @@ welcome! by the end of this workshop, you'll have a real project built with clau
 2. sign in (or create an account, use the same email you gave us at check-in)
 3. go to **Billing → Credits** and paste the code from your card
 4. confirm the $40 balance shows up before moving on
+
+> **new to claude? use this referral link first:** https://claude.ai/referral/nPtFUf7vng
+> creating your account through it gives you a **free week of Claude Code + Cowork** on top of the $40 in console credits. do this before step 1 above so the referral attaches to the new account.
 
 ### accounts you'll need
 

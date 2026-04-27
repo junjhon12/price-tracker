@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:8000";
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL ?? "https://price-tracker-api-gamma.vercel.app";
 
 export interface TrackedItem {
   id: number;

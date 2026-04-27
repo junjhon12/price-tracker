@@ -17,7 +17,7 @@ export default function Home() {
       const data = await api.listItems();
       setItems(data);
     } catch (e) {
-      setError("Could not reach the backend. Is it running on localhost:8000?");
+      setError("Could not reach the backend at " + (process.env.NEXT_PUBLIC_BACKEND_URL ?? "https://price-tracker-api-gamma.vercel.app"));
       console.error("listItems failed:", e);
     } finally {
       setLoading(false);

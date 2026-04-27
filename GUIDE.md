@@ -30,10 +30,10 @@ welcome! by the end of this workshop, you'll have a real project built with clau
 1. go to https://console.anthropic.com
 2. sign in (or create an account, use the same email you gave us at check-in)
 3. go to **Billing → Credits** and paste the code from your card
-4. confirm the $40 balance shows up before moving on
+4. confirm the $20 balance shows up before moving on
 
 > **new to claude? use this referral link first:** https://claude.ai/referral/nPtFUf7vng
-> creating your account through it gives you a **free week of Claude Code + Cowork** on top of the $40 in console credits. do this before step 1 above so the referral attaches to the new account.
+> creating your account through it gives you a **free week of Claude Code + Cowork** on top of the $20 in console credits. do this before step 1 above so the referral attaches to the new account.
 
 ### accounts you'll need
 

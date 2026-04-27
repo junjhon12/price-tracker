@@ -50,7 +50,7 @@ then open **[GUIDE.md](./GUIDE.md)** and follow along.
 - macOS, linux, or windows 10/11
 - git and a github account
 - ~2 GB free disk space (playwright chromium is chunky for project B)
-- a claude account with credits (you got $40 at check-in)
+- a claude account with credits (you got $20 at check-in)
 
 ## new to claude?
 
@@ -58,4 +58,4 @@ sign up using this referral link to get a **free week of Claude Code + Cowork** 
 
 **https://claude.ai/referral/nPtFUf7vng**
 
-create your account through that link before redeeming the $40 console credits so the referral attaches.
+create your account through that link before redeeming the $20 console credits so the referral attaches.

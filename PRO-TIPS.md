@@ -1,10 +1,11 @@
 # pro tips
 
-high-leverage habits to apply right after the workshop. each tip: why -> command -> gotcha -> escape hatch.
+high-leverage habits to apply right after the workshop.
+each tip is in the format: `why` -> `command` -> `gotcha` -> `escape hatch`.
 
 ## tl;dr
 
-1. alias `c` so launching claude is one keystroke
+1. alias `c` so launching claude is one keystroke in the CLI (intended for claude code CLI users)
 2. switch models per task: sonnet default, opus for hard thinking, haiku for cheap iteration
 3. plan your subagent orchestration before you start coding
 4. dispatch independent work in parallel from a single message
@@ -85,7 +86,13 @@ or run claude raw without an alias. the alias is convenience, not a requirement.
 ## 2. switching models on the fly
 
 ### why
-not every task needs the same model. opus is great at reasoning but slow and expensive. haiku is fast and cheap, perfect for search-heavy work and simple edits. sonnet is the balanced default. picking right per-task can 10x your throughput and cut spend.
+not every task needs the same model. 
+- opus is great at reasoning but slow and expensive.
+- haiku is fast and cheap, perfect for search-heavy work and simple edits.
+- sonnet is the balanced default.
+
+picking right per-task can 10x your throughput and cut spend. 
+*this is important since you've got only $20 in credits for this workshop unless you've just got it like that. but unless you're mr. moneybags then try using smaller/cheaper models for smaller, simpler, isolated, or one-off tasks.*
 
 ### in an interactive session
 

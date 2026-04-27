@@ -3,9 +3,10 @@ FROM mcr.microsoft.com/playwright/python:v1.49.0-jammy
 WORKDIR /app
 
 COPY pyproject.toml .
-RUN pip install uv && uv sync --no-dev
+RUN pip install uv && uv sync --no-dev --no-install-project
 
 COPY app/ app/
+RUN uv sync --no-dev
 
 ENV PYTHONUNBUFFERED=1
 ENV PORT=8000

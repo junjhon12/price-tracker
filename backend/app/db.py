@@ -1,9 +1,11 @@
+import os
 import aiosqlite
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import AsyncIterator
 
-DB_PATH = Path(__file__).parent.parent / "prices.db"
+# Vercel's filesystem is read-only except /tmp
+DB_PATH = Path("/tmp/prices.db") if os.environ.get("VERCEL") else Path(__file__).parent.parent / "prices.db"
 
 
 @asynccontextmanager

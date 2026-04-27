@@ -8,11 +8,15 @@ starter repo for the **claude code workshop** on 04-27-2026, hosted by **[progsu
 git clone https://github.com/liamellison02/claude-workshop-starter.git
 cd claude-workshop-starter
 
-# pick your OS
-./setup/setup-mac-silicon.sh      # apple silicon
-./setup/setup-mac-intel.sh        # intel mac
-./setup/setup-linux.sh            # linux
-.\setup\setup-windows.ps1         # windows (powerShell as admin)
+# pick your OS (mac/linux: make the script executable first)
+chmod 711 ./setup/mac-silicon.sh   # apple silicon
+chmod 711 ./setup/mac-intel.sh     # intel mac
+chmod 711 ./setup/linux.sh         # linux
+
+./setup/mac-silicon.sh      # apple silicon
+./setup/mac-intel.sh        # intel mac
+./setup/linux.sh            # linux
+.\setup\windows.ps1         # windows (powerShell as admin)
 
 # auth
 gh auth login

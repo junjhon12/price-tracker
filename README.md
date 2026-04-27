@@ -2,6 +2,66 @@
 
 starter repo for the **claude code workshop** on 04-27-2026, hosted by **[progsu](https://progsu.com)**
 
+---
+
+## price tracker (project B)
+
+### prerequisites
+
+- Python 3.11+ with `uv` installed
+- Node.js with `pnpm` installed
+
+### run the backend
+
+```bash
+# 1. install python deps (first time only)
+cd backend
+uv sync
+
+# 2. install playwright's chromium (first time only)
+uv run playwright install chromium
+
+# 3. start the API
+uv run uvicorn app.main:app --reload --app-dir backend
+#    → listening on http://localhost:8000
+```
+
+The SQLite database (`backend/prices.db`) is created automatically on first run.
+
+### run the frontend
+
+```bash
+# in a second terminal
+cd frontend
+pnpm install     # first time only
+pnpm dev
+#  → http://localhost:3000
+```
+
+To point the frontend at a different backend URL:
+```bash
+cp frontend/.env.example frontend/.env.local
+# edit NEXT_PUBLIC_BACKEND_URL in .env.local
+```
+
+### API endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/items` | Track a new URL (scrapes immediately) |
+| `GET` | `/items` | List all items with latest price |
+| `GET` | `/items/{id}/history` | Full price history for one item |
+| `POST` | `/items/{id}/refresh` | Re-scrape one item |
+| `POST` | `/refresh-all` | Re-scrape all items |
+
+### scraper strategies (in order)
+
+1. **Site-specific selectors** — Amazon and Best Buy have known CSS selectors
+2. **Meta tags** — `og:price:amount` or `product:price:amount`
+3. **Currency regex** — scans all page text for `$X,XXX.XX` patterns
+
+---
+
 ## 60-second quickstart
 
 ```bash
